@@ -3,13 +3,18 @@
     <title>Sound Effects</title>
     <script>
         var amogus = new Audio("https://mikecraftthecoder.github.io/SoundEffects/sounds/Amogus.mp3");
+        var mems = new Audio("https://mikecraftthecoder.github.io/SoundEffects/sounds/cool%20music.mp3");
         function sus(){
             amogus.play();
+        }
+        function meme(){
+            mems.play();
         }
         function pausesounds(){
             amogus.pause();
         }
     </script>
     <button onclick="sus()">Play Amogus sound</button>
+    <button onclick="meme()">Play Rick Roll sound</button>
     <button onclick="pausesounds()">Pause sounds</button>
 </html>
