@@ -5,8 +5,16 @@
         var amogus = new Audio("https://mikecraftthecoder.github.io/SoundEffects/sounds/Amogus.mp3");
         var mems = new Audio("https://mikecraftthecoder.github.io/SoundEffects/sounds/cool%20music.mp3");
         var itr = new Audio("https://mikecraftthecoder.github.io/SoundEffects/sounds/Its raining tacos.mp3");
+        amogusplay = false;
         function sus(){
-            amogus.play();
+            if(!amogusplay){
+                amogusplay = true;
+                amogus.play();
+            }
+            else{
+                amogusplay = false;
+                amogus.stop();
+            }
         }
         function meme(){
             mems.play();
